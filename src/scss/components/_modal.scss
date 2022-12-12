@@ -1,0 +1,130 @@
+.modal{
+  display: block;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: .4rem;
+  background-color: $muted-background;
+
+  &-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    font-weight: 600;
+    border-radius: .4rem .4rem 0 0;
+    border-bottom: solid 2px $primary-color;
+  }
+
+  &-title{
+    margin: 0;
+    font-size: 1.5rem;
+    color: $primary-color;
+  }
+
+  &-close{
+    padding: .35rem .75rem .45rem;
+    font-size: 1.15rem;
+    color: white;
+    border-radius: .3rem;
+    vertical-align: center;
+    cursor: pointer;
+    background-color: rgba($color: $tertier-color, $alpha: .5);
+  }
+
+  &-body{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1.25rem;
+
+    .body{
+      &-img{
+        width: 300px;
+        /**
+        * Create constant height of image wrapper
+        * Ratio 1 : 1
+        * -------------
+        * height: 300px;
+        */
+
+        img{
+          border-radius: .4rem;
+          width: 100%;
+          
+          /* Display full image with height auto */
+          height: auto;
+
+          /**
+          * Display cropped image
+          * Sizes follow the wrapper
+          * -------------
+          * height: 100%;
+          * object-fit: cover;
+          * object-position: center;
+          */
+        }
+      }
+
+      &-desc{
+        width: calc(100% - 300px);
+        padding: 0 1rem;
+      }
+
+      &-title{
+        margin-bottom: .5rem;
+      }
+    }
+  }
+
+  @include breakpoint-screen-max('md'){
+    max-width: 700px;
+
+    &-header{
+      padding: 1rem;
+    }
+
+    &-body{
+      padding: 1rem;
+
+      .body{
+        &-img{
+          width: 270px;
+          /**
+          * Set height for tablet display
+          * -------------
+          * height: 270px;
+          */
+        }
+
+        &-desc{
+          width: calc(100% - 270px);
+        }
+      }
+    }
+  }
+
+
+  @include breakpoint-screen-max('sm'){
+    &-body{
+      flex-flow: column wrap;
+      .body{
+        &-img{
+          margin-bottom: 1rem;
+          width: 100%;
+          /**
+          * Set height for small tablet display
+          * -------------
+          * height: 430px;
+          */
+        }
+
+        &-desc{
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

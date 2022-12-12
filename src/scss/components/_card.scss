@@ -1,0 +1,125 @@
+.card{
+  &-wrapper{
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.5rem;
+    justify-content: center;
+  }
+
+  &-error{
+    padding: 2rem;
+    display: block;
+    grid-column: 1 / 4;
+    border: solid 2px $border-color;
+    border-radius: .4rem;
+    text-align: center;
+
+    &-img{
+      width: 90%;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    &-text{
+      font-size: 1.25rem;
+      color: $tertier-color;
+      margin-bottom: 0;
+    }
+  }
+
+  &-name-placeholder{
+    width: 50%;
+    height: 1.75rem;
+  }
+
+  &-item{
+    display: block;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+
+    &.cursor{
+      &-pointer{
+        cursor: pointer;
+      }
+
+      &-loading{
+        cursor: wait;
+      }
+    }
+
+    &:hover .card-item-image img{
+      @include transform('scale', '1.1');
+    }
+
+    &-image{
+      width: 100%;
+      height: 260px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+  
+      & > img{
+        border-radius: .3rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover !important;
+        object-position: center !important;
+        background-color: $placeholder-background;
+        @include transition(.25s);
+        @include transform('scale', '1');
+        
+        &.spinner{
+          object-fit: none !important;
+        }
+      }
+    }
+
+    &-name{
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: .45rem;
+    }
+  }
+
+  &-popup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba($color: $dark-background, $alpha: 0.5);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.5s);
+  
+    &.show{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include breakpoint-screen-max('md'){
+    &-wrapper{
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-item{
+      &-image{
+        height: 300px;
+      }
+    }
+  }
+
+  @include breakpoint-screen-max('sm'){
+    &-item{
+      &-image{
+        height: 200px;
+      }
+    }
+  }
+}

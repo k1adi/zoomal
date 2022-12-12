@@ -1,0 +1,19 @@
+update-section{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  .update-limit{
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    padding: .75rem;
+    border-radius: .5rem;
+    outline: none;
+    border: solid 2px $secondary-color;
+    color: $secondary-color;
+    background-color: $dark-background;
+    cursor: pointer;
+  }
+}

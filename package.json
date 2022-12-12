@@ -1,0 +1,40 @@
+{
+  "name": "zoomal",
+  "version": "1.0.0",
+  "description": "Random Animal with Description",
+  "private": true,
+  "scripts": {
+    "test-lint": "eslint --ext .js ./src",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js",
+    "serve": "webpack serve --config webpack.dev.js"
+  },
+  "author": "k1adi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@squoosh/lib": "^0.4.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.25.0",
+    "favicons": "^7.0.2",
+    "favicons-webpack-plugin": "^6.0.0-alpha.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^3.7.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "axios": "^1.1.3",
+    "lodash": "^4.17.21",
+    "mini-svg-data-uri": "^1.4.4",
+    "regenerator-runtime": "^0.13.10"
+  }
+}

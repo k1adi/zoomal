@@ -1,0 +1,76 @@
+.banner{
+  &-wrapper{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  &-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(5px) brightness(0.5);
+  }
+
+  &-content{
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    top: 62%;
+    left: 50%;
+    @include transform('translate', '-50%, -50%');
+  }
+
+  &-title{
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: .75rem;
+  }
+
+  &-text{
+    font-size: 1.35rem;
+    color: $text-color;
+  }
+
+  @include breakpoint-screen-max('lg'){
+    &-wrapper{
+      height: 500px;
+    }
+
+    &-title{
+      font-size: 2.75rem;
+    }
+
+    &-text{
+      font-size: 1.25rem;
+    }
+  }
+
+  @include breakpoint-screen-max('md'){
+    &-wrapper{
+      height: 450px;
+    }
+  }
+
+
+  @include breakpoint-screen-max('sm'){
+    &-wrapper{
+      height: 400px;
+    }
+
+    &-title{
+      font-size: 2.5rem;
+    }
+  }
+
+  @include breakpoint-screen-max('xs'){
+    &-title{
+      font-size: 2.25rem;
+    }
+    &-wrapper{
+      height: 280px;
+    }
+  }
+}

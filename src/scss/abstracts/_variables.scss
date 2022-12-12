@@ -1,0 +1,31 @@
+$primary-color: #00c897 !default;
+$secondary-color: #fccc52 !default;
+$tertier-color: #EB4747 !default;
+$dark-background: #1b1b1b !default;
+$muted-background: #353535 !default;
+$footer-background: #131313 !default;
+$text-muted: #a8a8a8 !default;
+$text-color: #cdcdcd !default;
+$border-color: #363636 !default;
+$box-shadow: rgba(46, 46, 46, 1) !default;
+$placeholder-background: rgb(121, 121, 121) !default;
+$placeholder-animation: 'rgba(202, 202, 202' !default;
+
+// Font Size
+$font-size-base: 1rem !default;
+
+// Font Family
+$font-family-base: 'Rubik', sans-serif !default;
+
+// Max width wrapper
+$width-relative: 92%;
+$max-width-wrapper: 1200px !default;
+
+// Grid Breakpoints{
+$grid-break: (
+  'xs': 576px,
+  'sm': 768px,
+  'md': 992px,
+  'lg': 1200px,
+  'xl': 1400px
+);

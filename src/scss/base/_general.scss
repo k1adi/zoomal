@@ -1,0 +1,27 @@
+*, 
+::after,
+::before{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html{
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: $font-size-base;
+
+  @include breakpoint-screen-max('sm'){
+    font-size: 14px;
+  }
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: $dark-background;
+  font-family: $font-family-base;
+  color: $text-color;
+}

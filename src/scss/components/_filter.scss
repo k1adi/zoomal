@@ -1,0 +1,68 @@
+.filter{
+  &-wrapper{
+    position: relative;
+    display: flex;
+    gap: .75rem;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    border-radius: .5rem;
+    padding: 1.25rem;
+    @include box-shadow('0px', '0px', '10px', '3px', $box-shadow);
+  }
+  &-control{
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: solid 2px $border-color;
+    color: $text-color;
+    background-color: $dark-background;
+  }
+
+  &-input{
+    display: block;
+    width: calc(100% - 200px - calc(0.75rem / 2));
+
+    & > input{
+      display: block;
+      width: 100%;
+      margin-bottom: .5rem;
+    }
+
+    & small{
+      padding-left: .25rem;
+    }
+  }
+
+  &-select{
+    display: block;
+    cursor: pointer;
+    width: calc(200px - calc(0.75rem / 2));
+  }
+  
+  @include breakpoint-screen-max('md'){
+    &-input{
+      width: calc(100% - 150px - calc(0.75rem / 2));
+    }
+
+    &-select{
+      width: calc(150px - calc(0.75rem / 2));
+    }
+  }
+  
+  @include breakpoint-screen-max('xs'){
+    &-wrapper{
+      gap: 0;
+      padding: 1rem;
+    }
+    &-input{
+      margin-bottom: .75rem;
+    }
+
+    &-input,
+    &-select{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+app-footer{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.75rem 0;
+  background-color: $footer-background;
+
+  & > p{
+    font-size: 1.15rem;
+    margin-bottom: .5rem;
+  }
+
+  .footer{
+    &-emoji{
+      font-size: 1.5rem;
+      line-height: 0.5;
+    }
+
+    &-link{
+      color: $text-color;
+    }
+
+
+  }
+}

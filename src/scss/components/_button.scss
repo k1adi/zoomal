@@ -1,0 +1,18 @@
+.btn{
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: .3rem;
+  cursor: pointer;
+
+  &-refresh{
+    background-color: $secondary-color;
+    @include transition(.25s);
+
+    &:hover{
+      background-color: adjust-color($color: $secondary-color, $lightness: -15%);
+    }
+  }
+}
