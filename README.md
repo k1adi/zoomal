@@ -3,9 +3,9 @@
 ## Overview
 This web application was initially created as a personal portfolio to showcase the usage of a public APIs, and it was published on [CodePen](https://codepen.io/k1adi/pen/bGvVbYx) natively using HTML, CSS, and JavaScript.
 
-Then, when I participated ["Belajar Fundamental Front-End Web Development"](https://www.dicoding.com/academies/163) class at Dicoding with program [IDCamp 2022](https://idcamp.ioh.co.id/) from Indosat Ooredoo Hutchison, the application was further developed according to the submission criteria such as utilizing ES6, Web Components(custom element), Package Managers([NPM](https://www.npmjs.com/)), and Module Bundler ([webpack](https://webpack.js.org/)).
+Then, when I participated ["Belajar Fundamental Front-End Web Development"](https://www.dicoding.com/academies/163) class at Dicoding with program [IDCamp 2022](https://idcamp.ioh.co.id/) from Indosat Ooredoo Hutchison, the application was further developed according to the submission criteria such as utilizing ES6, Web Components (custom element), Package Managers ([NPM](https://www.npmjs.com/)), and Module Bundler ([webpack](https://webpack.js.org/)).
 
-This web application is capable of asynchronously fetching data using [Axios](https://axios-http.com/) and storing it in Web Storage, load an image with asynchronous method, filtering data, having a responsive design on any device and interactive interface.
+This web application is capable of asynchronously fetching data using [Axios](https://axios-http.com/), manipulating the data obtained using [Lodash](https://lodash.com/), storing data in web storage, load an image with asynchronous method, filtering data, having a responsive design on any device and interactive interface.
 
 ## Installation
 1. Clone the project repository to your local machine using a Git client or by downloading the project as a zip file.
