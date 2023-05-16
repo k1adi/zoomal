@@ -31,6 +31,7 @@ npm run serve
 
 This project uses webpack for building and serving the project and the package.json file provided contains several scripts for building, serving, and development mode. Make sure you have the required version of Node.js and npm installed before running the above commands.
 
+Alternatively, you can directly access the deployed web application at https://zoomal.netlify.app/
 
 ## Scripts
 - `dev` : Create Development version of the web application
