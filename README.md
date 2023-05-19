@@ -3,7 +3,7 @@
 ## Overview
 This web application was initially created as a personal portfolio to showcase the usage of a public APIs, it was published on [CodePen](https://codepen.io/k1adi/pen/bGvVbYx) natively using HTML, CSS and JavaScript.
 
-Then, when I participated ["Belajar Fundamental Front-End Web Development"](https://www.dicoding.com/academies/163) class at Dicoding with program [IDCamp 2022](https://idcamp.ioh.co.id/) from Indosat Ooredoo Hutchison, the application was further developed according to the submission criteria such as utilizing ES6, Web Components (custom element), Package Managers ([NPM](https://www.npmjs.com/)) and Module Bundler ([webpack](https://webpack.js.org/)).
+Then, when I participated ["Belajar Fundamental Front-End Web Development"](https://www.dicoding.com/academies/163) class at Dicoding with program [IDCamp 2022](https://idcamp.ioh.co.id/) from Indosat Ooredoo Hutchison, the application was further developed according to the purpose of this final project for students to be able to develop websites using simple, reusable, and optimal techniques, as well as to create front-end web applications with standard ES6 JavaScript code, implementing Web Components (custom element), [Webpack](https://webpack.js.org/), utilizing third-party libraries with [NPM](https://www.npmjs.com/) and displaying dynamic data from Web APIs using AJAX.
 
 This web application is capable of asynchronously fetching data using [Axios](https://axios-http.com/), manipulating the data obtained using [Lodash](https://lodash.com/), storing data in web storage, load an image with asynchronous method, filtering data, having a responsive design on any device and interactive interface.
 
